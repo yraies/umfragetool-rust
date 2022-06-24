@@ -1,0 +1,39 @@
+title: This is Survey speaking!
+description: "Hello, I am survey."
+groups:
+  - title: Set 1
+    description: ""
+    questions:
+      - title: Why would you do this?
+        spec:
+          type: text
+          is_long: true
+      - title: How much is the fish?
+        spec:
+          type: continous_numeric
+          bounds: ~
+      - title: What do you want?
+        spec:
+          type: discrete_numeric
+          bounds:
+            - 1
+            - 10
+          num_descriptions:
+            10: YESSSSH!!!!
+            1: NOPE!
+      - title: What do you want?
+        spec:
+          type: single_choice
+          answers:
+            - Pizza
+            - Ravioli
+            - MAOAM
+          custom_answer: true
+      - title: What do you want?
+        spec:
+          type: multiple_choice
+          answers:
+            - Pizza
+            - Ravioli
+            - MAOAM
+          custom_answer: true
